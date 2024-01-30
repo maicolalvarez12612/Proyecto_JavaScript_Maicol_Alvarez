@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');/*Imortamos la fuente de texto*/
+/*Estilos implementados al body*/
+body {
+  display: flex;/* Establece el modelo de caja del elemento como un contenedor flexible */
+  justify-content: center;/*Ponemos el contenido en el centro de la pantalla*/
+  height: 100vh;/* Altura del elemento */
+  margin: 0;/*Le quitamos el margen del contenedor*/
+  background-image: url(img/fondo_pa.jpg);/*Le aplicamos un fondo extraido desde imagenes locales*/
+}
+
+.contenido {
+  display: flex; /* Establece el modelo de caja del elemento como un contenedor flexible */
+  justify-content: space-between; /* Distribuye el espacio disponible entre los elementos hijos, dejando espacio entre ellos */
+}
+
+.inicio {
+  background-color: rgba(0, 0, 0, 0.55); /* Color de fondo con transparencia (negro con 55% de opacidad) */
+  border-radius: 50px; /* Radio de borde para hacer esquinas redondeadas */
+  border: 10px solid black; /* Borde sólido de 10 píxeles de ancho en color negro */
+  margin: 50px; /* Márgenes externos de 50 píxeles en todos los lados */
+  padding: 20px; /* Relleno interno de 20 píxeles en todos los lados */
+  padding-left: 50px; /* Relleno adicional a la izquierda de 50 píxeles */
+  padding-right: 50px; /* Relleno adicional a la derecha de 50 píxeles */
+  padding-bottom: 50px; /* Relleno adicional en la parte inferior de 50 píxeles */
+  width: 700px; /* Ancho del elemento */
+  height: 700px; /* Altura del elemento */
+}
+
+.inicio h1 {
+  font-size: 22px; /* Tamaño de fuente de 22 píxeles */
+  color: #FFF; /* Color del texto blanco (hexadecimal) */
+  font-family: 'Sixtyfour', sans-serif; /* Tipo de fuente: 'Sixtyfour' y, si no está disponible, se utiliza una fuente genérica sans-serif */
+}
+
+.direc {
+  margin-left: 150px; /* Márgen izquierdo de 150 píxeles */
+  width: 100px; /* Ancho del elemento de 100 píxeles */
+  height: 100px; /* Altura del elemento de 100 píxeles */
+}
+
+#title {
+  width: 700px; /* Ancho del elemento con el id 'title' de 700 píxeles */
+  height: 150px; /* Altura del elemento con el id 'title' de 150 píxeles */
+}
+
+.reglas {
+  background-color: blue; /* Color de fondo azul */
+  margin: 50px; /* Márgenes externos de 50 píxeles en todos los lados */
+  padding: 50px; /* Relleno interno de 50 píxeles en todos los lados */
+}
+
+.boton {
+  width: 700px; /* Ancho del elemento con la clase 'boton' de 700 píxeles */
+  height: 100px; /* Altura del elemento con la clase 'boton' de 100 píxeles */
+  background-color: red; /* Color de fondo rojo */
+}
+
+.boton:hover {
+  width: 700px; /* Ancho al pasar el ratón por encima de un elemento con la clase .boton */
+  height: 110px; /* Altura al pasar el ratón por encima de un elemento con la clase .boton */
+  background-color: yellow; /* Cambio de color de fondo a amarillo al pasar el ratón por encima */
+  border-radius: 5px; /* Borde redondeado de 5 píxeles al pasar el ratón por encima */
+}
+
+#canvasContainer {
+  display: flex; /* Establece el modelo de caja del elemento como un contenedor flexible */
+  justify-content: center; /* Centra el contenido horizontalmente dentro del contenedor */
+  align-items: center; /* Centra el contenido verticalmente dentro del contenedor */
+  width: 1000px; /* Ancho del elemento con el id 'canvasContainer' de 1000 píxeles */
+  height: 870px; /* Altura del elemento con el id 'canvasContainer' de 870 píxeles */
+  border: 10px solid black; /* Borde sólido de 10 píxeles de ancho en color negro */
+  background-image: url(img/fondo.png); /* Establece una imagen de fondo */
+  background-size: auto 200%; /* Configura el tamaño de la imagen de fondo */
+  background-repeat: repeat-y; /* Hace que la imagen de fondo se repita verticalmente */
+  background-position: 50% 50%; /* Posición inicial de la imagen de fondo */
+  animation: readmove 2s infinite linear; /* Aplica la animación 'readmove' durante 2 segundos, de forma infinita y lineal */
+}
+
+@keyframes readmove {
+  0% { background-position: 0 100%; } /* Configuración de la posición de fondo al 0% de la animación */
+  50% { background-position: 0 50%; } /* Configuración de la posición de fondo al 50% de la animación */
+  100% { background-position: 0 0; } /* Configuración de la posición de fondo al 100% de la animación */
+}
+
+#canvas {
+  border: 1px solid black; /* Borde sólido de 1 píxel de ancho en color negro */
+  width: 800px; /* Ancho del elemento con el id 'canvas' de 800 píxeles */
+  height: 870px; /* Altura del elemento con el id 'canvas' de 870 píxeles */
+}
+
+  
